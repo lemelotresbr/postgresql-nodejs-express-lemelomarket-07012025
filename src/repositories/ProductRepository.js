@@ -14,6 +14,13 @@ class ProductRepository {
             name, brand
         ]);
     }
+
+    static async getAllProducts() {
+        const response = await Database.query(`
+            select * from products;
+        `);
+        return response.rows;
+    }
 }
 
 module.exports = ProductRepository;
