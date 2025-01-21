@@ -4,6 +4,7 @@
       "internalServerError": "Internal server error"
     },
        "success": {
-          "created": "${resource} created successfully"
+          "created": "${resource} created successfully",
+          "found": "${resource} found successfully."
       }
   }
